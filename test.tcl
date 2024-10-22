@@ -1,6 +1,7 @@
 
-#package require vmdext
-load vmdext.tcl
+package require vmdext
+
+source vmdext.tcl
 
 mol new 3VE6.pdb waitfor all
 set resids1 [atomselect_by_resid top "chain A"]
